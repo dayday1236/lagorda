@@ -1,0 +1,268 @@
+@charset "UTF-8";
+* {
+  font-family: "Open Sans",Helvetica,sans-serif;
+}
+
+body {
+  /* Ubicación de la imagen */
+  background-image: url(../img/textura-bg.png);
+  /* Para dejar la imagen de fondo centrada, vertical y
+    
+    horizontalmente */
+  background-position: center center;
+  /* Para que la imagen de fondo no se repita */
+  background-repeat: no-repeat;
+  /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+  background-attachment: fixed;
+  /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+  background-size: cover;
+  /* Se muestra un color de fondo mientras se está cargando la imagen
+    
+    de fondo o si hay problemas para cargarla */
+  background-color: red;
+}
+
+.negro {
+  background-color: black;
+  width: 100%;
+  height: 10px;
+}
+
+.img-logo {
+  width: auto;
+  height: 100px;
+}
+
+@media (max-width: 576px) {
+  .img-logo {
+    height: 70px;
+  }
+}
+
+/* IMAGENES CABEZERA */
+.img-premios {
+  width: auto;
+  height: 500px;
+}
+
+@media (max-width: 576px) {
+  .img-premios {
+    height: 250px;
+  }
+}
+
+/* ESTILO DE LOS TEXTOS */
+.cm-title-one {
+  color: white;
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+@media (max-width: 576px) {
+  .cm-title-one {
+    font-size: 1.5em;
+  }
+}
+
+.cm-title-two {
+  color: #F6A623;
+  font-weight: 600;
+  font-size: 2.8em;
+}
+
+@media (max-width: 576px) {
+  .cm-title-two {
+    font-size: 1.8em;
+  }
+}
+
+.cm-date-promo {
+  color: white;
+  font-size: 1.8em;
+}
+
+@media (max-width: 576px) {
+  .cm-date-promo {
+    font-size: 1.4em;
+  }
+}
+
+.cm-info {
+  color: white;
+  font-size: 1.4em;
+  line-height: 10px;
+}
+
+@media (max-width: 576px) {
+  .cm-info {
+    font-size: 1em;
+    line-height: 15px;
+  }
+}
+
+.cm-info-two h2 {
+  color: white;
+  font-size: 2.5em;
+}
+
+/* BOTON DE PARTICIPACION */
+.boton {
+  line-height: 1.6em;
+  color: white;
+  font-size: 22.1px;
+  font-weight: bold;
+  background-color: #e11021;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  font-family: 'Open Sans';
+  border: 2px solid red;
+}
+
+.boton:hover {
+  color: red;
+  background-color: white;
+  border: 2px solid red;
+}
+
+@media (max-width: 576px) {
+  .boton {
+    font-size: 1em;
+  }
+}
+
+.btn-descubrelo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.6em;
+  color: #000;
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #D7B538;
+  border: 2px solid #D7B538;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  font-family: 'Open Sans';
+}
+
+.btn-descubrelo:hover {
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+}
+
+@media (max-width: 576px) {
+  .btn-descubrelo {
+    font-size: 1em;
+  }
+}
+
+/* FOOTER */
+footer {
+  color: white;
+  background-color: #000;
+  padding: 50px;
+}
+
+footer p:nth-child(1) {
+  font-size: 1.5em;
+}
+
+@media (max-width: 576px) {
+  footer p:nth-child(1) {
+    font-size: 1em;
+  }
+}
+
+footer p:nth-child(2) {
+  font-size: 1.3em;
+}
+
+@media (max-width: 576px) {
+  footer p:nth-child(2) {
+    font-size: 0.8em;
+  }
+}
+
+.col-center {
+  float: none;
+  margin: 0 auto;
+}
+
+.listado-premios {
+  color: #1e1e1c;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 576px) {
+  .listado-premios {
+    margin-bottom: 25px;
+  }
+}
+
+.title-premios {
+  text-align: center;
+  /* font-weight: bold!important; */
+  position: relative;
+  z-index: 0;
+  margin-bottom: 50px !important;
+}
+
+.title-content {
+  display: inline-block;
+  background: #fff;
+  z-index: 1;
+  position: relative;
+  padding: 0 40px;
+}
+
+@media (max-width: 576px) {
+  .title-content {
+    padding: 0;
+  }
+}
+
+.primer-premio:after {
+  background: #e11021;
+}
+
+.title-premios:after {
+  content: " ";
+  display: block;
+  background: #e11021;
+  height: 3px;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -3px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.segundo-premio:after {
+  background: #ff5a00;
+}
+
+.tercer-premio:after {
+  background: #ff8f51;
+}
+
+.cuarto-premio:after {
+  background: #2388ab;
+}
+
+.container:after, .container:before {
+  content: " ";
+  display: table;
+}
+
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=main.css.map */
